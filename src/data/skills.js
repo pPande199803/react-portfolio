@@ -2,9 +2,8 @@ export const skills = [
   {
     title: "Frontend Development",
     items: [
-      "Angular 18",
-      "Angular 19",
-      "React 18",
+      "Angular 20",
+      "React",
       "TypeScript",
       "JavaScript (ES6+)",
       "HTML5",
@@ -16,21 +15,21 @@ export const skills = [
     ],
   },
 
-  {
-    title: "Angular Ecosystem",
-    items: [
-      "RxJS",
-      "NgRx",
-      "Reactive Forms",
-      "Standalone Components",
-      "Routing",
-      "Lazy Loading",
-      "Dependency Injection",
-      "Component-Based Architecture",
-      "Single Page Applications (SPA)",
-      "Reusable Components",
-    ],
-  },
+  // {
+  //   title: "Angular Ecosystem",
+  //   items: [
+  //     "RxJS",
+  //     "NgRx",
+  //     "Reactive Forms",
+  //     "Standalone Components",
+  //     "Routing",
+  //     "Lazy Loading",
+  //     "Dependency Injection",
+  //     "Component-Based Architecture",
+  //     "Single Page Applications (SPA)",
+  //     "Reusable Components",
+  //   ],
+  // },
 
   {
     title: "Backend",
@@ -50,6 +49,7 @@ export const skills = [
       "PostgreSQL",
       "MongoDB",
       "MySQL",
+      "Redis"
     ],
   },
 
@@ -61,6 +61,8 @@ export const skills = [
       "Docker",
       "Postman",
       "CI/CD",
+      "Render",
+      "Vercel"
     ],
   },
 
@@ -78,4 +80,5 @@ export const skills = [
       "SDLC",
     ],
   },
+  
 ];

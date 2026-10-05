@@ -17,14 +17,7 @@ export const experiences = [
       "Collaborated with cross-functional teams for feature analysis, requirement gathering and AI-driven system design.",
     ],
 
-    tech: [
-      "Angular",
-      "FastAPI",
-      "PostgreSQL",
-      "GPT",
-      "Gemini",
-      "REST API",
-    ],
+    tech: ["Angular", "FastAPI", "PostgreSQL", "GPT", "Gemini", "REST API"],
   },
 
   {
@@ -43,13 +36,6 @@ export const experiences = [
       "Integrated REST APIs with scalable backend architecture.",
     ],
 
-    tech: [
-      "Angular",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Bootstrap",
-      "JWT",
-    ],
+    tech: ["Angular", "Node.js", "Express.js", "MongoDB", "Bootstrap", "JWT"],
   },
 ];

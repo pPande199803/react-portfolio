@@ -130,7 +130,7 @@ const Hero = () => {
               transition={{ repeat: Infinity, duration: 4 }}
               className="absolute top-4 -left-4 lg:top-10 lg:-left-6 bg-white rounded-2xl shadow-xl px-5 py-4 z-20"
             >
-              <h2 className="text-2xl font-bold text-[#2F7A73]">2+</h2>
+              <h2 className="text-2xl font-bold text-[#2F7A73]">3+</h2>
 
               <p className="text-sm text-gray-500">Years Experience</p>
             </motion.div>
@@ -140,7 +140,7 @@ const Hero = () => {
             <motion.div
               animate={{ y: [8, -8, 8] }}
               transition={{ repeat: Infinity, duration: 5 }}
-              className="absolute bottom-4 -right-4 lg:bottom-10 lg:-right-6 bg-white rounded-2xl shadow-xl px-5 py-4 z-20"
+              className="absolute bottom-4 -right-0 lg:bottom-10 lg:-right-0 bg-white rounded-2xl shadow-xl px-5 py-4 z-20"
             >
               <h2 className="text-2xl font-bold text-[#2F7A73]">15+</h2>
 

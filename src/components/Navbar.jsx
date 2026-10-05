@@ -15,7 +15,7 @@ const navItems = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
- 
+
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-[#FFFDF7]/90 backdrop-blur-lg border-b border-gray-200">
@@ -25,7 +25,7 @@ const Navbar = () => {
 
           <NavLink to="/">
             <h1 className="text-3xl font-bold text-[#1E3A5F]">
-              Prathamesh<span className="text-[#2F7A73]">.</span>
+              Prathamesh P<span className="text-[#2F7A73]">.</span>
             </h1>
           </NavLink>
 

@@ -90,7 +90,7 @@ const About = () => {
 
             <p className="text-gray-600 leading-8 mt-8">
               I'm Prathamesh Pande, a Frontend Developer with
-              nearly 3 years of experience developing
+              nearly 3+ years of experience developing
               enterprise-level web applications using Angular,
               React, TypeScript, JavaScript and modern UI
               technologies.
@@ -108,7 +108,7 @@ const About = () => {
 
               <div>
                 <h2 className="text-5xl font-bold text-[#0F172A]">
-                  2+
+                  3+
                 </h2>
 
                 <p className="text-gray-500 mt-2">
