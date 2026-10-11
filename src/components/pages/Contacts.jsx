@@ -46,7 +46,7 @@ const Contact = () => {
                 <h3 className="font-semibold">+91 83297 58097</h3>
               </div>
             </div>
-
+    
             <div className="flex items-center gap-4">
               <FaMapMarkerAlt size={24} className="text-[#2F7A73]" />
 

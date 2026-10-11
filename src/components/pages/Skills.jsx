@@ -2,11 +2,13 @@ import { motion } from "framer-motion";
 import { skills } from "../../data/skills";
 
 const Skills = () => {
+  const allSkills = skills.flatMap((category) => category.items);
+
   return (
     <section className="bg-[#FFFDF7] py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <span className="text-[#2F7A73] uppercase font-semibold tracking-widest">
             My Skills
           </span>
@@ -21,31 +23,22 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="flex flex-wrap justify-center gap-4">
 
-          {skills.map((category) => (
+          {allSkills.map(({ name, Icon }) => (
             <motion.div
-              key={category.title}
-              whileHover={{ y: -8 }}
-              className="bg-white rounded-3xl p-8 shadow-md"
+              key={name}
+              whileHover={{ y: -6, scale: 1.06 }}
+              className="group relative flex items-center justify-center w-16 h-16 rounded-full bg-white border border-gray-200 shadow-sm transition duration-300 hover:bg-[#2F7A73] hover:border-[#2F7A73]"
             >
-              <h3 className="text-2xl font-bold text-[#0F172A] mb-6">
-                {category.title}
-              </h3>
+              <Icon
+                size={26}
+                className="text-[#2F7A73] transition duration-300 group-hover:text-white"
+              />
 
-              <div className="flex flex-wrap gap-3">
-
-                {category.items.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-4 py-2 rounded-full bg-[#FFFDF7] border border-gray-200 hover:bg-[#2F7A73] hover:text-white transition"
-                  >
-                    {skill}
-                  </span>
-                ))}
-
-              </div>
-
+              <span className="pointer-events-none absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-[#2F7A73] px-3 py-1 text-xs font-medium text-white opacity-0 transition duration-300 group-hover:opacity-100">
+                {name}
+              </span>
             </motion.div>
           ))}
 
