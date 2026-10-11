@@ -5,7 +5,7 @@ export const projectTabs = {
       title: "AI-Powered E-Commerce Chatbot",
       role: "Full Stack Developer",
 
-      image: "/e-comm.png",
+      image: "/assets/e-comm.png",
 
       description:
         "AI-powered e-commerce search chatbot using Jev for intent detection and decision-based product filtering.",
@@ -34,7 +34,7 @@ export const projectTabs = {
       title: "Personal Developer Portfolio",
       role: "Frontend Developer",
 
-      image: "/portfolio.png",
+      image: "/assets/portfolio.png",
 
       description:
         "Modern responsive developer portfolio built with React.js to showcase skills, experience, projects, and professional profile.",
@@ -57,7 +57,7 @@ export const projectTabs = {
       id: 3,
       title: "Medical Store",
       role: "Full Stack Developer",
-      image: "/medical-store.png",
+      image: "/assets/medical-store.png",
 
       description:
         "A full-stack medical store management application for managing medicines, inventory, and medicine records.",
@@ -88,7 +88,7 @@ export const projectTabs = {
       title: "Database Backup Manager",
       role: "Full Stack Developer",
 
-      image: "/database-backup.png",
+      image: "/assets/database-backup.png",
 
       description:
         "A secure database backup application supporting PostgreSQL, MySQL, and MongoDB through connection strings, with encrypted backups and automated scheduling.",
