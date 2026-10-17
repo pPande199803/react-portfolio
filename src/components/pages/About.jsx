@@ -30,11 +30,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-white py-20 lg:py-28"
+      className="bg-white py-20 lg:py-28 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
           {/* LEFT */}
 
@@ -82,10 +82,10 @@ const About = () => {
               About Me
             </span>
 
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#0F172A] mt-4 leading-tight">
-              Building Modern &
-              <br />
-              Scalable Web Applications
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A] mt-4 leading-tight">
+              Building Modern &amp;
+              <br className="hidden sm:block" />
+              {" "}Scalable Web Applications
             </h2>
 
             <p className="text-gray-600 leading-8 mt-8">
@@ -104,34 +104,34 @@ const About = () => {
 
             {/* Statistics */}
 
-            <div className="grid grid-cols-3 gap-8 mt-12">
+            <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-10 sm:mt-12">
 
               <div>
-                <h2 className="text-5xl font-bold text-[#0F172A]">
+                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A]">
                   3+
                 </h2>
 
-                <p className="text-gray-500 mt-2">
+                <p className="text-xs sm:text-sm text-gray-500 mt-2">
                   Years Experience
                 </p>
               </div>
 
               <div>
-                <h2 className="text-5xl font-bold text-[#0F172A]">
+                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A]">
                   15+
                 </h2>
 
-                <p className="text-gray-500 mt-2">
+                <p className="text-xs sm:text-sm text-gray-500 mt-2">
                   Projects
                 </p>
               </div>
 
               <div>
-                <h2 className="text-5xl font-bold text-[#0F172A]">
+                <h2 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A]">
                   12+
                 </h2>
 
-                <p className="text-gray-500 mt-2">
+                <p className="text-xs sm:text-sm text-gray-500 mt-2">
                   Technologies
                 </p>
               </div>

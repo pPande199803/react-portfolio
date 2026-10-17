@@ -12,13 +12,13 @@ const Experience = () => {
 
         {/* Heading */}
 
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 sm:mb-20">
 
           <p className="uppercase tracking-[4px] text-[#2F7A73] font-semibold">
             Experience
           </p>
 
-          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900 mt-3">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mt-3">
             Professional Journey
           </h2>
 
@@ -37,22 +37,22 @@ const Experience = () => {
               key={exp.id}
               whileHover={{ y: -8 }}
               transition={{ duration: .3 }}
-              className="bg-[#FFFDF7] rounded-3xl p-8 shadow-lg hover:shadow-2xl"
+              className="bg-[#FFFDF7] rounded-3xl p-6 sm:p-8 shadow-lg hover:shadow-2xl"
             >
 
               <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center">
 
-                <div className="flex items-center gap-5">
+                <div className="flex items-center gap-4 sm:gap-5">
 
-                  <div className="w-16 h-16 rounded-full bg-[#2F7A73] text-white flex items-center justify-center">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 shrink-0 rounded-full bg-[#2F7A73] text-white flex items-center justify-center">
 
                     <FaBriefcase size={24} />
 
                   </div>
 
-                  <div>
+                  <div className="min-w-0">
 
-                    <h3 className="text-2xl font-bold text-slate-900">
+                    <h3 className="text-xl sm:text-2xl font-bold text-slate-900">
                       {exp.role}
                     </h3>
 

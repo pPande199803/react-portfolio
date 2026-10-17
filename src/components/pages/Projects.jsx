@@ -7,7 +7,7 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState("projects");
 
   return (
-    <section id="projects" className="py-10 bg-[#FFFDF7]">
+    <section id="projects" className="py-14 sm:py-20 bg-[#FFFDF7]">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
 
@@ -16,7 +16,7 @@ const Projects = () => {
             Portfolio
           </p>
 
-          <h2 className="text-4xl lg:text-5xl font-bold mt-3">My Projects</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3">My Projects</h2>
 
           <p className="text-gray-500 mt-4">
             Personal Projects & Professional Work
@@ -25,11 +25,11 @@ const Projects = () => {
 
         {/* Tabs */}
 
-        <div className="flex justify-center mt-12">
-          <div className="bg-white shadow rounded-full p-2 flex gap-2">
+        <div className="flex justify-center mt-10 sm:mt-12">
+          <div className="bg-white shadow rounded-full p-2 flex flex-wrap justify-center gap-2">
             <button
               onClick={() => setActiveTab("projects")}
-              className={`px-6 py-3 rounded-full transition ${
+              className={`px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-full transition ${
                 activeTab === "projects" ? "bg-[#2F7A73] text-white" : ""
               }`}
             >
@@ -38,7 +38,7 @@ const Projects = () => {
 
             <button
               onClick={() => setActiveTab("work")}
-              className={`px-6 py-3 rounded-full transition ${
+              className={`px-4 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-base rounded-full transition ${
                 activeTab === "work" ? "bg-[#2F7A73] text-white" : ""
               }`}
             >
@@ -49,7 +49,7 @@ const Projects = () => {
 
         {/* Cards */}
 
-        <div className="grid md:grid-cols-2 gap-8 mt-16">
+        <div className="grid md:grid-cols-2 gap-8 mt-10 sm:mt-16">
           {projectTabs[activeTab].map((item) => (
             <motion.div
               key={item.id}
@@ -66,8 +66,8 @@ const Projects = () => {
                 />
               )}
 
-              <div className="p-8">
-                <h3 className="text-2xl font-bold">{item.title}</h3>
+              <div className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold">{item.title}</h3>
 
                 <p className="text-[#2F7A73] mt-1">{item.role}</p>
 

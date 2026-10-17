@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
-import { FiMoon, FiDownload } from "react-icons/fi";
-import resume from "../assets/Resume_Prathamesh_pande.pdf";
+import { FiDownload } from "react-icons/fi";
+import resume from "../assets/Resume_Prathamesh_Pande.pdf";
 
 const navItems = [
   { name: "Home", path: "/" },
@@ -24,7 +24,7 @@ const Navbar = () => {
           {/* Logo */}
 
           <NavLink to="/">
-            <h1 className="text-3xl font-bold text-[#1E3A5F]">
+            <h1 className="text-2xl sm:text-3xl font-bold text-[#1E3A5F]">
               Prathamesh P<span className="text-[#2F7A73]">.</span>
             </h1>
           </NavLink>
@@ -78,7 +78,11 @@ const Navbar = () => {
 
           {/* Mobile */}
 
-          <button className="lg:hidden text-3xl" onClick={() => setOpen(!open)}>
+          <button
+            className="lg:hidden p-2 -mr-2 text-3xl"
+            onClick={() => setOpen(!open)}
+            aria-label="Toggle menu"
+          >
             {open ? <HiOutlineX /> : <HiOutlineMenuAlt3 />}
           </button>
         </div>
@@ -87,7 +91,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
 
       {open && (
-        <div className="lg:hidden bg-[#FFFDF7] shadow-xl">
+        <div className="lg:hidden bg-[#FFFDF7] shadow-xl max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div className="flex flex-col">
             {navItems.map((item) => (
               <NavLink
@@ -107,9 +111,13 @@ const Navbar = () => {
             ))}
 
             <div className="p-6">
-              <button className="w-full bg-[#2F7A73] text-white py-4 rounded-full">
+              <a
+                href={resume}
+                download="Prathamesh_Pande_Resume.pdf"
+                className="block w-full text-center bg-[#2F7A73] hover:bg-[#245F59] text-white py-4 rounded-full transition"
+              >
                 Download Resume
-              </button>
+              </a>
             </div>
           </div>
         </div>

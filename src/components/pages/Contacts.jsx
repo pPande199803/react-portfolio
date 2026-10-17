@@ -10,14 +10,14 @@ import { HiDownload } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <section id="contact" className="bg-[#FFFDF7] py-24">
+    <section id="contact" className="bg-[#FFFDF7] py-16 lg:py-24">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center">
           <p className="uppercase tracking-widest text-[#2F7A73] font-semibold">
             Contact
           </p>
 
-          <h2 className="text-5xl font-bold mt-3">Let's Connect</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-3">Let's Connect</h2>
 
           <p className="text-gray-500 mt-4">
             Available for Angular Developer | Frontend Developer | MEAN Stack
@@ -25,15 +25,17 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mt-16">
-          <div className="bg-white rounded-3xl p-8 shadow-lg">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mt-10 sm:mt-16">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-lg">
             <div className="flex items-center gap-4 mb-8">
               <FaEnvelope size={24} className="text-[#2F7A73]" />
 
-              <div>
+              <div className="min-w-0">
                 <p className="text-gray-500">Email</p>
 
-                <h3 className="font-semibold">prathameshpande789@email.com</h3>
+                <h3 className="font-semibold text-sm sm:text-base break-all">
+                  prathameshpande789@email.com
+                </h3>
               </div>
             </div>
 
@@ -58,19 +60,19 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="bg-[#2F7A73] rounded-3xl text-white p-8 flex flex-col justify-center">
-            <h3 className="text-3xl font-bold">Connect with me</h3>
+          <div className="bg-[#2F7A73] rounded-3xl text-white p-6 sm:p-8 flex flex-col justify-center">
+            <h3 className="text-2xl sm:text-3xl font-bold">Connect with me</h3>
 
             <p className="mt-4 text-white/80">
               You can also find me on GitHub and LinkedIn.
             </p>
 
             <div className="flex gap-5 mt-8">
-              <a href="https://github.com/pPande199803">
+              <a href="https://github.com/pPande199803" aria-label="GitHub">
                 <FaGithub size={30} />
               </a>
 
-              <a href="https://www.linkedin.com/in/pande-prathamesh/">
+              <a href="https://www.linkedin.com/in/pande-prathamesh/" aria-label="LinkedIn">
                 <FaLinkedin size={30} />
               </a>
             </div>
@@ -78,7 +80,7 @@ const Contact = () => {
             <a
               href={resume}
               download="Prathamesh_Pande_Resume.pdf"
-              className="mt-10 inline-flex items-center justify-center gap-2 bg-white text-[#2F7A73] px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition duration-300"
+              className="mt-8 sm:mt-10 inline-flex items-center justify-center gap-2 bg-white text-[#2F7A73] px-6 sm:px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition duration-300"
             >
               <HiDownload size={20} />
               Download Resume

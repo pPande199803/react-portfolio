@@ -5,7 +5,7 @@ const Skills = () => {
   const allSkills = skills.flatMap((category) => category.items);
 
   return (
-    <section className="bg-[#FFFDF7] py-20">
+    <section className="bg-[#FFFDF7] py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         <div className="text-center mb-12">
@@ -13,7 +13,7 @@ const Skills = () => {
             My Skills
           </span>
 
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#0F172A] mt-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0F172A] mt-4">
             Technologies I Work With
           </h2>
 

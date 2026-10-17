@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+/* Prevent horizontal overflow / sideways scrolling on mobile
+   (e.g. from framer-motion entrance transforms) */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}

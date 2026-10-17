@@ -22,7 +22,7 @@ const Footer = () => {
     <footer className="bg-[#0F172A] text-white">
       {/* Top */}
 
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-6 py-12 sm:py-16">
         <div className="grid md:grid-cols-3 gap-10 items-center">
           {/* Left */}
 
@@ -97,7 +97,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Prathamesh Pande. All Rights Reserved.
           </p>
 
-          <p className="flex items-center gap-2 text-gray-400">
+          <p className="flex flex-wrap items-center justify-center gap-2 text-gray-400 text-center">
             Built with
             <FaHeart className="text-red-500" />
             Angular | React | TypeScript | JavaScript | Node.js

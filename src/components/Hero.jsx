@@ -1,7 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import profile from "../assets/profile.png";
-import resume from "../assets/Resume_Prathamesh_pande.pdf";
+import resume from "../assets/Resume_Prathamesh_Pande.pdf";
 
 import { FaGithub, FaLinkedin, FaArrowRight } from "react-icons/fa";
 
@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section className="bg-[#FFFDF7] pt-24 lg:pt-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 lg:gap-14">
           {/* LEFT */}
 
           <motion.div
@@ -24,7 +24,7 @@ const Hero = () => {
               👋 Hello There,
             </p>
 
-            <h1 className="font-bold text-[#0F172A] leading-tight text-5xl md:text-6xl lg:text-7xl">
+            <h1 className="font-bold text-[#0F172A] leading-tight text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
               I'm
               <br />
               <span className="text-[#1E3A5F]">Prathamesh</span>
@@ -32,7 +32,7 @@ const Hero = () => {
               Pande
             </h1>
 
-            <div className="mt-6 text-2xl lg:text-3xl font-semibold text-[#2F7A73] min-h-[40px]">
+            <div className="mt-6 text-xl sm:text-2xl lg:text-3xl font-semibold text-[#2F7A73] min-h-[40px]">
               <TypeAnimation
                 sequence={[
                   "Frontend Developer",
@@ -57,11 +57,11 @@ const Hero = () => {
 
             {/* Buttons */}
 
-            <div className="flex flex-col sm:flex-row gap-5 mt-10 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 mt-8 sm:mt-10 justify-center lg:justify-start">
               {/* Hire Me */}
               <a
                 href="#contact"
-                className="bg-[#2F7A73] hover:bg-[#255F59] text-white px-8 py-4 rounded-full flex items-center justify-center gap-3 transition duration-300"
+                className="bg-[#2F7A73] hover:bg-[#255F59] text-white px-6 sm:px-8 py-4 rounded-full flex items-center justify-center gap-3 transition duration-300"
               >
                 Hire Me
                 <FaArrowRight />
@@ -71,7 +71,7 @@ const Hero = () => {
               <a
                 href={resume}
                 download="Prathamesh_Pande_Resume.pdf"
-                className="border-2 border-[#2F7A73] text-[#2F7A73] px-8 py-4 rounded-full flex items-center justify-center gap-3 hover:bg-[#2F7A73] hover:text-white transition duration-300"
+                className="border-2 border-[#2F7A73] text-[#2F7A73] px-6 sm:px-8 py-4 rounded-full flex items-center justify-center gap-3 hover:bg-[#2F7A73] hover:text-white transition duration-300"
               >
                 Resume
                 <HiDownload />
