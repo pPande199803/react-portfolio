@@ -50,7 +50,7 @@ export const projectTabs = {
       tech: ["React.js", "JavaScript", "Tailwind CSS", "HTML", "CSS", "Vite"],
 
       github: "https://github.com/pPande199803/react-portfolio",
-      live: "https://react-portfolio-dist.vercel.app",
+      live: "https://prathamesh-pande-dev.vercel.app",
     },
 
     {
